@@ -11,30 +11,21 @@
 </head>
 <body class="bg-gray-100">
     <div class="container mx-auto px-4 py-6 pb-20">
-        <!-- 顶部导航 -->
-        <nav class="bg-white shadow-sm rounded-lg px-4 py-3 mb-6 flex items-center justify-between">
-            <div class="flex items-center">
-                <a href="index.html" class="text-gray-500">
-                    <i class="fas fa-arrow-left"></i>
-                </a>
-                <h1 class="text-lg font-bold text-gray-800 ml-4">理财师版客户简报</h1>
-            </div>
-            <div class="flex items-center space-x-3">
-                <button class="text-gray-500">
-                    <i class="fas fa-sync-alt"></i>
-                </button>
-                <button class="text-gray-500">
-                    <i class="fas fa-file-pdf"></i>
-                </button>
-                <button class="text-gray-500">
-                    <i class="fas fa-ellipsis-v"></i>
-                </button>
-            </div>
-        </nav>
 
         <!-- 全局概览卡片 -->
         <div class="bg-white rounded-lg shadow mb-6 p-4">
-            <h2 class="text-md font-bold text-gray-800 mb-4">本周全局概览</h2>
+            <!-- 标题和图标保持在一行 -->
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-md font-bold text-gray-800">本周全局概览</h2>
+                <div class="flex items-center space-x-3">
+                    <button class="text-gray-500">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                    <button class="text-gray-500">
+                        <i class="fas fa-file-pdf"></i>
+                    </button>
+                </div>
+            </div>
             
             <div class="grid grid-cols-3 gap-4 mb-4">
                 <div class="text-center">
@@ -76,6 +67,54 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- 本周总结 -->
+        <div class="bg-white rounded-lg shadow mb-6 p-4">
+            <!-- 标题和图标保持在一行 -->
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-md font-bold text-gray-800">小结</h2>
+                <div class="flex items-center space-x-3">
+                    <button class="text-gray-500">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="text-gray-500">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4 mb-4">
+                <div class="flex items-start mb-3">
+                    <div class="bg-blue-100 text-blue-800 p-2 rounded-full mr-3">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-800 mb-2">客户动态概括</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            本周名下客户整体表现稳定，高净值客户张先生和李女士的资产配置调整已完成，效果良好。王先生的风险偏好有所提升，建议下周进行跟进沟通。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4">
+                <div class="flex items-start">
+                    <div class="bg-green-100 text-green-800 p-2 rounded-full mr-3">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-800 mb-2">市场与产品动态</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            宏观方面，央行维持MLF利率不变，市场流动性整体充裕。A股市场震荡上行，科技板块表现亮眼。我行新发行的"稳健增长"系列理财产品收益率具有较强竞争力，适合向中高风险偏好客户推荐。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-3 text-right">
+                <span class="text-xs text-gray-500">最后更新: 2023-06-16 10:30</span>
             </div>
         </div>
 
@@ -385,27 +424,6 @@
             </button>
         </div>
         
-        <!-- 底部导航 -->
-        <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-2">
-            <div class="flex justify-between items-center">
-                <a href="#" class="text-center w-1/4 text-blue-600">
-                    <i class="fas fa-home text-xl"></i>
-                    <div class="text-xs mt-1">首页</div>
-                </a>
-                <a href="#" class="text-center w-1/4 text-gray-400">
-                    <i class="fas fa-users text-xl"></i>
-                    <div class="text-xs mt-1">客户</div>
-                </a>
-                <a href="#" class="text-center w-1/4 text-gray-400">
-                    <i class="fas fa-chart-pie text-xl"></i>
-                    <div class="text-xs mt-1">分析</div>
-                </a>
-                <a href="#" class="text-center w-1/4 text-gray-400">
-                    <i class="fas fa-user text-xl"></i>
-                    <div class="text-xs mt-1">我的</div>
-                </a>
-            </div>
-        </div>
     </div>
 
     <script>
